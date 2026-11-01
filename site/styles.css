@@ -316,7 +316,33 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .project { padding: 6px 0; border: 0; margin: 0; break-inside: avoid; }
   .bullets li { font-size: 10pt; }
   .cert { padding: 0; border: 0; }
-  .contact__list { grid-template-columns: repeat(2, 1fr); }
-  .contact__list a { padding: 4px 0; border: 0; }
+  /* Grid/flex rows straddling a page get sliced mid-text, so print the list as flowing inline blocks */
+  .contact__list { display: block; }
+  .contact__list li { display: inline-block; width: 49%; vertical-align: top; }
+  .contact__list a { display: inline-flex; padding: 4px 0; border: 0; }
   a { color: #111; }
+
+  /* Page-break control: move small blocks whole, keep headings with their content */
+  .contact, .cert, .edu, .skill, .meta, .bullets li, .hero__top { break-inside: avoid; page-break-inside: avoid; }
+  .section h2, .role__head, .project__head { break-after: avoid; page-break-after: avoid; }
+  p, li { orphans: 3; widows: 3; }
+
+  /* Compact sizing so the CV fits on 2 A4 pages */
+  .hero__top { grid-template-columns: 26mm 1fr; gap: 5mm; }
+  .hero__role { margin: 4px 0 6px; font-size: 9.5pt; }
+  .hero__pitch, .section > p, .lead { font-size: 10pt; margin-bottom: 6px; }
+  .meta { font-size: 9.5pt; gap: 4px 16px; }
+  .section { padding: 8px 0; }
+  .section h2 { margin-bottom: 6px; }
+  .chips { gap: 4px; }
+  .chip, .tags li { padding: 0 5px; font-size: 8.5pt; }
+  .skill h3 { font-size: 8.5pt; }
+  .skills { gap: 4px; }
+  .role__head { margin-bottom: 4px; }
+  .role__head h3, .project__head h4, .cert h3, .edu h3 { font-size: 11pt; }
+  .role__date, .project__date { font-size: 8.5pt; }
+  .project__head { margin-bottom: 2px; }
+  .project__ctx, .cert p, .edu p, .tools { font-size: 9.5pt; margin-bottom: 4px; }
+  .bullets { gap: 2px; margin-bottom: 6px; }
+  .contact__list a { font-size: 10pt; padding: 2px 0; }
 }

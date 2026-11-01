@@ -4,3 +4,8 @@ JD.md
 .DS_Store
 .vscode/
 *.swp
+
+# Secrets: never commit or publish
+*token*
+*.env
+.env*

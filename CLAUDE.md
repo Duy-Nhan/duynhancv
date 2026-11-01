@@ -46,7 +46,7 @@ site/                 # Thư mục được deploy bởi GitHub Actions
 - **Thêm section mới**: `<section id="..." class="section">` + `<h2><span class="num">NN</span>Title</h2>`, đánh lại số thứ tự 01–07, rồi thêm link vào `#navLinks` (active nav tự chạy nhờ IntersectionObserver).
 - **Skills**: chip `chip--key` (màu xanh) dành cho kỹ năng khớp với JD; chip thường cho các kỹ năng còn lại.
 - **Responsive**: mobile-first, gutter 16px. Breakpoint 640px cho grid; dưới 720px menu chuyển sang dạng thu gọn. Không được có thanh cuộn ngang.
-- **Print** (`@media print` cuối `styles.css`): nút "Download CV" gọi `window.print()`. Khi thêm phần tử chỉ để trang trí, nhớ ẩn nó trong print. Class `.print-only` chỉ hiện khi in. Bản in cần gọn trong 1–2 trang A4.
+- **Print** (`@media print` cuối `styles.css`): nút "Download CV" gọi `window.print()`. Khi thêm phần tử chỉ để trang trí, nhớ ẩn nó trong print. Class `.print-only` chỉ hiện khi in. Bản in cần gọn trong 1–2 trang A4. Khối mới trong print phải có `break-inside: avoid`. Không dùng grid/flex cho danh sách nhiều dòng khi in, vì trình duyệt sẽ cắt ngang chữ ở chỗ chuyển trang.
 - **Hero**: `.hero__top` là grid gồm cột ảnh 3:4 (`.hero__photo`, rộng 96px trên mobile và 150px từ 640px) và cột tên + giới thiệu (`.hero__intro`). Nếu không có `avatar.jpg`, ảnh bị `onerror` xóa và khung `.hero__photo-empty` hiện ra; khung này ẩn khi in.
 - `localStorage` chỉ dùng để nhớ theme, luôn bọc trong try/catch.
 - Mỗi lần deploy nội dung mới, cập nhật `<lastmod>` trong `sitemap.xml`.
