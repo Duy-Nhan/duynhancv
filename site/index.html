@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nguyen Huynh Duy Nhan — COBOL Developer (SMART/400, LifeAsia, DB2)</title>
+  <meta name="description"
+    content="COBOL Developer with 4 years at DXC Technology building life insurance core systems on IBM i (AS/400) with SMART/400, LifeAsia, Business Object and DB2. AI-assisted development. Azure AI Engineer Associate. Ho Chi Minh City, Vietnam.">
+  <meta name="keywords"
+    content="COBOL developer, COBOL developer Vietnam, COBOL developer Ho Chi Minh, AS/400 developer, IBM i, SMART/400, LifeAsia, Business Object CSC, DB2 for i, life insurance core system, legacy modernization, AI-assisted development, Azure AI Engineer">
+  <meta name="author" content="Nguyen Huynh Duy Nhan">
+  <link rel="canonical" href="https://duy-nhan.github.io/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Nguyen Huynh Duy Nhan — COBOL Developer">
+  <meta property="og:description"
+    content="Life insurance core systems on IBM i: SMART/400 · LifeAsia · DB2. AI-assisted development.">
+  <meta property="og:url" content="https://duy-nhan.github.io/">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#fafafa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) { }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nguyen Huynh Duy Nhan",
+    "jobTitle": "COBOL Developer",
+    "worksFor": { "@type": "Organization", "name": "DXC Technology Vietnam" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Ho Chi Minh City", "addressCountry": "VN" },
+    "email": "mailto:nhduynhan@gmail.com",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Ho Chi Minh City University of Technology" },
+    "knowsAbout": ["COBOL", "IBM i", "AS/400", "SMART/400", "LifeAsia", "Business Object", "DB2", "SQL", "Life insurance", "Claude Code", "Microsoft Copilot", "Azure AI"],
+    "hasCredential": { "@type": "EducationalOccupationalCredential", "name": "Microsoft Certified: Azure AI Engineer Associate", "recognizedBy": { "@type": "Organization", "name": "Microsoft" } },
+    "url": "https://duy-nhan.github.io/",
+    "sameAs": ["https://www.linkedin.com/in/nhan-nguyen-375135302/", "https://github.com/Duy-Nhan"]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Icon sprite (Lucide-style, inline so the page has no icon dependency) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <rect width="20" height="16" x="2" y="4" rx="2" />
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+        <rect width="4" height="12" x="2" y="9" />
+        <circle cx="4" cy="4" r="2" />
+      </symbol>
+      <symbol id="i-github" viewBox="0 0 24 24">
+        <path
+          d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+        <path d="M9 18c-4.51 2-5-2-7-2" />
+      </symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24">
+        <path
+          d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" />
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24">
+        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+        <circle cx="12" cy="10" r="3" />
+      </symbol>
+      <symbol id="i-award" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="6" />
+        <path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11" />
+      </symbol>
+      <symbol id="i-download" viewBox="0 0 24 24">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+        <path d="m7 10 5 5 5-5" />
+        <path d="M12 15V3" />
+      </symbol>
+      <symbol id="i-external" viewBox="0 0 24 24">
+        <path d="M15 3h6v6" />
+        <path d="M10 14 21 3" />
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+      </symbol>
+      <symbol id="i-sparkles" viewBox="0 0 24 24">
+        <path
+          d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z" />
+      </symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24">
+        <path d="M22 10v6" />
+        <path d="M2 10l10-5 10 5-10 5z" />
+        <path d="M6 12v5c3 3 9 3 12 0v-5" />
+      </symbol>
+      <symbol id="i-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4" />
+        <path
+          d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
+      </symbol>
+      <symbol id="i-moon" viewBox="0 0 24 24">
+        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+      </symbol>
+      <symbol id="i-user" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="5" />
+        <path d="M20 21a8 8 0 0 0-16 0" />
+      </symbol>
+      <symbol id="i-menu" viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="Back to top">NHDN<span class="cursor"
+          aria-hidden="true">_</span></a>
+      <nav aria-label="Sections">
+        <button class="icon-btn nav__toggle" id="menuBtn" aria-expanded="false" aria-controls="navLinks"
+          aria-label="Open menu">
+          <svg class="i">
+            <use href="#i-menu" />
+          </svg>
+        </button>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#ai">AI</a></li>
+          <li><a href="#certifications">Certification</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="icon-btn" id="themeBtn" aria-label="Toggle dark mode">
+        <svg class="i i--sun">
+          <use href="#i-sun" />
+        </svg>
+        <svg class="i i--moon">
+          <use href="#i-moon" />
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__top">
+        <!-- 3x4 portrait: put your photo at site/assets/avatar.jpg (e.g. 600x800px) -->
+        <figure class="hero__photo">
+          <img src="assets/avatar.jpg" alt="Portrait of Nguyen Huynh Duy Nhan" width="600" height="800"
+            onerror="this.remove()">
+          <span class="hero__photo-empty" aria-hidden="true">
+            <svg class="i">
+              <use href="#i-user" />
+            </svg>3×4
+          </span>
+        </figure>
+        <div class="hero__intro">
+          <p class="badge"><span class="dot" aria-hidden="true"></span>Open to new opportunities</p>
+          <h1>Nguyen Huynh Duy Nhan</h1>
+          <p class="hero__role">COBOL Developer · Life Insurance Core Systems</p>
+          <p class="hero__pitch">
+            I build and maintain the COBOL programs behind life insurance core systems on
+            <strong>IBM i (AS/400)</strong> with <strong>SMART/400</strong>, <strong>LifeAsia</strong> and
+            <strong>DB2</strong>,
+            and I use AI tools to get through legacy code faster.
+          </p>
+        </div>
+      </div>
+      <ul class="meta">
+        <li><svg class="i">
+            <use href="#i-pin" />
+          </svg>Ho Chi Minh City, Vietnam</li>
+        <li><svg class="i">
+            <use href="#i-mail" />
+          </svg><a href="mailto:nhduynhan@gmail.com">nhduynhan@gmail.com</a></li>
+        <li class="print-only"><svg class="i">
+            <use href="#i-phone" />
+          </svg>+84 854 664 885</li>
+        <li class="print-only"><svg class="i">
+            <use href="#i-linkedin" />
+          </svg>https://www.linkedin.com/in/nhan-nguyen-375135302/</li>
+      </ul>
+      <div class="cta">
+        <a class="btn btn--primary" href="mailto:nhduynhan@gmail.com"><svg class="i">
+            <use href="#i-mail" />
+          </svg>Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/nhan-nguyen-375135302/" target="_blank" rel="noopener"><svg
+            class="i">
+            <use href="#i-linkedin" />
+          </svg>LinkedIn</a>
+        <button class="btn" id="printBtn" type="button"><svg class="i">
+            <use href="#i-download" />
+          </svg>Download CV</button>
+      </div>
+
+      <dl class="stats">
+        <div>
+          <dt>Years in COBOL</dt>
+          <dd>4</dd>
+        </div>
+        <div>
+          <dt>Insurers served</dt>
+          <dd>2 <span>VN · JP</span></dd>
+        </div>
+        <div>
+          <dt>Microsoft cert</dt>
+          <dd>AI-102</dd>
+        </div>
+      </dl>
+
+      <pre class="term" aria-hidden="true"><code><span class="c">      *&gt; nhan.cbl</span>
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. <span class="k">NHAN-CV</span>.
+       PROCEDURE DIVISION.
+           DISPLAY <span class="s">"COBOL + DB2 + LIFEASIA + AI"</span>
+           STOP RUN.</code></pre>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2><span class="num">01</span>About</h2>
+      <p>
+        COBOL Developer with <strong>4 years at DXC Technology Vietnam</strong> building and maintaining life insurance
+        core systems for <strong>BIDV MetLife Vietnam</strong> and <strong>NN Life Japan</strong>. I've worked across
+        the full
+        SDLC, from design and coding through unit testing, UAT support and deployment, on IBM i with SMART/400,
+        LifeAsia, Business Object (BO) and DB2.
+      </p>
+      <p>
+        I use <strong>Claude Code</strong> and <strong>Microsoft Copilot</strong> to analyze legacy code and to draft
+        specs
+        and test cases faster. I'm a <strong>Microsoft Certified: Azure AI Engineer Associate</strong>.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2><span class="num">02</span>Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <h3>Languages</h3>
+          <ul class="chips">
+            <li class="chip chip--key">COBOL</li>
+            <li class="chip">SQL</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Platform</h3>
+          <ul class="chips">
+            <li class="chip chip--key">IBM i (AS/400)</li>
+            <li class="chip chip--key">DXC SMART/400</li>
+            <li class="chip chip--key">LifeAsia</li>
+            <li class="chip chip--key">Business Object (BO of CSC)</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Database</h3>
+          <ul class="chips">
+            <li class="chip chip--key">DB2 for i</li>
+            <li class="chip">SQL queries</li>
+            <li class="chip">Data integrity checks</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Domain</h3>
+          <ul class="chips">
+            <li class="chip chip--key">Life insurance</li>
+            <li class="chip">New product development</li>
+            <li class="chip">Policy administration</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Engineering</h3>
+          <ul class="chips">
+            <li class="chip">Full SDLC</li>
+            <li class="chip">Unit test design &amp; execution</li>
+            <li class="chip">UAT support</li>
+            <li class="chip">Debugging &amp; troubleshooting</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>AI &amp; Cloud</h3>
+          <ul class="chips">
+            <li class="chip">Claude Code</li>
+            <li class="chip">Microsoft Copilot</li>
+            <li class="chip">Azure AI services</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Also</h3>
+          <ul class="chips">
+            <li class="chip">Python</li>
+            <li class="chip">JavaScript</li>
+            <li class="chip">React</li>
+            <li class="chip">HTML/CSS</li>
+            <li class="chip">REST APIs</li>
+            <li class="chip">Git</li>
+            <li class="chip">English</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Ways of working</h3>
+          <ul class="chips">
+            <li class="chip">Clear communication with business users</li>
+            <li class="chip">Teamwork in 15–40 person teams</li>
+            <li class="chip">Adapting to changing requirements</li>
+            <li class="chip">Calm under deadline pressure</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <h2><span class="num">03</span>Experience</h2>
+
+      <div class="role">
+        <div class="role__head">
+          <div>
+            <h3>COBOL Developer</h3>
+            <p class="role__org">DXC Technology Vietnam</p>
+          </div>
+          <p class="role__date">04/2023 – Present</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="project">
+            <div class="project__head">
+              <h4>NN Life Japan: Life/J core insurance system</h4>
+              <p class="project__date">08/2023 – Present · team of 39</p>
+            </div>
+            <p class="project__ctx">NN Life is a major life insurer in Japan. Its core business system (Life/J) runs on
+              DXC SMART/400, alongside .NET, ETL, Java and TIBCO ESB integrations.</p>
+            <ul class="bullets">
+              <li>Developed and enhanced <strong> COBOL programs and BO modules</strong> for policy administration on
+                SMART/400 and DB2.</li>
+              <li>Designed and executed <strong> unit test cases</strong>, reducing defects found in SIT/UAT by
+                <strong>30%</strong>.
+              </li>
+              <li>Troubleshot and resolved <strong> SIT/production issues</strong> in existing COBOL programs within
+                agreed timelines.</li>
+              <li>Used <strong>Claude Code and Microsoft Copilot</strong> to analyze legacy code and draft specs and
+                test cases, cutting analysis time by <strong>~20%</strong> while following client data-security policy.
+              </li>
+            </ul>
+            <ul class="tags">
+              <li>COBOL</li>
+              <li>SMART/400</li>
+              <li>BO</li>
+              <li>DB2</li>
+              <li>SQL</li>
+            </ul>
+          </li>
+
+          <li class="project">
+            <div class="project__head">
+              <h4>BIDV MetLife Vietnam: New insurance products</h4>
+              <p class="project__date">04/2023 – 08/2023 · team of 17</p>
+            </div>
+            <p class="project__ctx">Development of new life insurance products on DXC SMART/400 for BIDV MetLife.</p>
+            <ul class="bullets">
+              <li>Supported UAT for <strong> new life insurance products</strong>, triaging and fixing defects together
+                with business users.</li>
+              <li>Explained root causes and fixes to <strong>non-technical stakeholders</strong>, helping close UAT on
+                schedule.</li>
+            </ul>
+            <ul class="tags">
+              <li>COBOL</li>
+              <li>SMART/400</li>
+              <li>SQL</li>
+              <li>UAT</li>
+            </ul>
+          </li>
+
+          <li class="project">
+            <div class="project__head">
+              <h4>DXC COBOL Fresher Training Program</h4>
+              <p class="project__date">10/2022 – 01/2023</p>
+            </div>
+            <p class="project__ctx">Intensive training in COBOL, IBM i (AS/400), DB2 and the SMART/400 framework.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- AI -->
+    <section id="ai" class="section">
+      <h2><span class="num">04</span>AI-assisted development</h2>
+      <p class="lead">I use AI to speed up the slow parts of working on legacy code. Every result is reviewed, and I
+        follow client security policy.</p>
+      <div class="cards">
+        <div class="card">
+          <svg class="i i--lg">
+            <use href="#i-sparkles" />
+          </svg>
+          <h3>Understand legacy code</h3>
+          <p>Summarize large COBOL programs, trace data flow across DB2 files, and find where a change will have impact.
+          </p>
+        </div>
+        <div class="card">
+          <svg class="i i--lg">
+            <use href="#i-sparkles" />
+          </svg>
+          <h3>Draft tests faster</h3>
+          <p>Generate unit test scenarios and edge cases from specs, then verify them against real business rules.</p>
+        </div>
+        <div class="card">
+          <svg class="i i--lg">
+            <use href="#i-sparkles" />
+          </svg>
+          <h3>Write clearer docs</h3>
+          <p>Turn code changes into specs and release notes that business stakeholders can read.</p>
+        </div>
+      </div>
+      <p class="tools">Tools: <span>Claude Code</span> · <span>Microsoft Copilot</span> · <span>Azure AI services</span>
+      </p>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+      <h2><span class="num">05</span>Certification</h2>
+      <div class="cert">
+        <svg class="i cert__icon">
+          <use href="#i-award" />
+        </svg>
+        <div class="cert__body">
+          <h3>Microsoft Certified: Azure AI Engineer Associate</h3>
+          <p>Microsoft · Exam AI-102</p>
+          <div class="cert__links">
+            <a href="assets/certificates/azure-ai-engineer-associate.pdf" target="_blank" rel="noopener"><svg class="i">
+                <use href="#i-download" />
+              </svg>Certificate (PDF)</a>
+            <!-- Add back once you have your personal credential share link (Microsoft Learn → Profile → Credentials → Share):
+            <a href="YOUR_CREDENTIAL_LINK" target="_blank" rel="noopener"><svg class="i"><use href="#i-external" /></svg>Verify on Microsoft Learn</a>
+            -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <h2><span class="num">06</span>Education</h2>
+      <div class="edu">
+        <svg class="i i--lg">
+          <use href="#i-cap" />
+        </svg>
+        <div>
+          <h3>Ho Chi Minh City University of Technology (HCMUT)</h3>
+          <p>B.Eng., Electrical Engineering · 2018 – 2022</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2><span class="num">07</span>Contact</h2>
+      <p class="lead">Hiring for COBOL, SMART/400 or LifeAsia work? I'd be glad to talk.</p>
+      <ul class="contact__list">
+        <li><a href="mailto:nhduynhan@gmail.com"><svg class="i">
+              <use href="#i-mail" />
+            </svg>nhduynhan@gmail.com</a></li>
+        <li><a href="tel:+84854664885"><svg class="i">
+              <use href="#i-phone" />
+            </svg>+84 854 664 885</a></li>
+        <li><a href="https://www.linkedin.com/in/nhan-nguyen-375135302/" target="_blank" rel="noopener"><svg class="i">
+              <use href="#i-linkedin" />
+            </svg>LinkedIn</a></li>
+        <li><a href="https://github.com/Duy-Nhan" target="_blank" rel="noopener"><svg class="i">
+              <use href="#i-github" />
+            </svg>GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year">2026</span> Nguyen Huynh Duy Nhan · Ho Chi Minh City</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

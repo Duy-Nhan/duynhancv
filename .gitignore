@@ -1,0 +1,6 @@
+# Target job description: kept local, not published
+JD.md
+
+.DS_Store
+.vscode/
+*.swp
