@@ -2,7 +2,7 @@
 
 **COBOL Developer · Life Insurance Core Systems (SMART/400 · LifeAsia · DB2) · AI-Assisted Development**
 
-Ho Chi Minh City, Vietnam · +84 854 664 885 · nhduynhan@gmail.com · [LinkedIn](https://www.linkedin.com/in/nhan-nguyen-375135302/) · [GitHub](https://github.com/Duy-Nhan) · [Website](https://duy-nhan.github.io/)
+Ho Chi Minh City, Vietnam · +84 854 664 885 · nhduynhan@gmail.com · [LinkedIn](https://www.linkedin.com/in/nhan-nguyen-375135302/) · [GitHub](https://github.com/Duy-Nhan) · [Website](https://duy-nhan.github.io/duynhancv/)
 
 ---
 
@@ -50,7 +50,7 @@ Development of new life insurance products on DXC SMART/400 for BIDV MetLife.
 
 ## Certifications
 
-- **Microsoft Certified: Azure AI Engineer Associate**, Microsoft · [Certificate (PDF)](site/assets/certificates/azure-ai-engineer-associate.pdf)
+- **Microsoft Certified: Azure AI Engineer Associate**, Microsoft · [Certificate (PDF)](site/assets/certificates/azure-ai-engineer-associate.pdf) · [Verify](https://learn.microsoft.com/api/credentials/share/en-us/NguyenHuynhDuyNhan-9143/BE484544AC21242?sharingId=DA191382962EBA37)
 
 ---
 

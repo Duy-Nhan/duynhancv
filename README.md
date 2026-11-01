@@ -1,8 +1,8 @@
-# duy-nhan.github.io
+# duynhancv
 
 Personal CV site of **Nguyen Huynh Duy Nhan**, COBOL Developer working on life insurance core systems (IBM i · SMART/400 · LifeAsia · DB2).
 
-**Live:** https://duy-nhan.github.io/
+**Live:** https://duy-nhan.github.io/duynhancv/
 
 ## Stack
 Plain HTML, CSS and JavaScript, with no framework and no build step. Hosted on GitHub Pages and deployed by GitHub Actions.

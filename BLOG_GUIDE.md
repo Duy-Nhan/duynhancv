@@ -10,23 +10,9 @@ Website nằm trong thư mục `site/`. Nội dung lấy từ `CV_Updated.md`, n
 | --- | --- |
 | Ảnh 3×4 | `site/assets/avatar.jpg` (tỉ lệ 3:4, 600×800px) |
 | Chứng chỉ PDF | `site/assets/certificates/azure-ai-engineer-associate.pdf` |
-| Link "Verify on Microsoft Learn" | Đang tạm ẩn (comment trong `index.html`). Bỏ comment và dán link chia sẻ credential cá nhân của bạn vào |
+| Link "Verify on Microsoft Learn" | Link chia sẻ credential cá nhân trên Microsoft Learn (đã gắn trong `index.html`) |
 
 GitHub Actions sẽ tự chặn deploy nếu trong `site/` còn placeholder. Muốn kiểm tra trước trên máy thì chạy:
-```bash
-grep -rn "\[X\]\|_URL\]\|GITHUB_USERNAME" site/
-```
-
---- | --- | --- |
-| `[X]` | `index.html`, `CV_Updated.md` | Số liệu thật (số chương trình, số test case, % giảm lỗi...). Nếu không nhớ số thì xóa phần số đi, **không được đoán** |
-| `[LINKEDIN_URL]` | `index.html` (4 chỗ), `CV_Updated.md` | Link LinkedIn, ví dụ `https://www.linkedin.com/in/...` |
-| `[GITHUB_URL]` | `index.html` (2 chỗ), `CV_Updated.md` | Link GitHub |
-| `[VERIFY_URL]` | `index.html`, `CV_Updated.md` | Link xác thực chứng chỉ trên Microsoft Learn |
-| `GITHUB_USERNAME` | `index.html`, `robots.txt`, `sitemap.xml` | Username GitHub (hoặc tên miền riêng) |
-| File PDF | `site/assets/certificates/azure-ai-engineer-associate.pdf` | Chép file chứng chỉ vào, đặt đúng tên này |
-| Ảnh 3×4 | `site/assets/avatar.jpg` | Ảnh chân dung tỉ lệ 3:4 (600×800px) |
-
-Kiểm tra lại xem còn sót placeholder nào không:
 ```bash
 grep -rn "\[X\]\|_URL\]\|GITHUB_USERNAME" site/
 ```
@@ -81,12 +67,12 @@ Thứ tự các phần được sắp theo cách recruiter đọc lướt (thư�
 
 ## 3. Deploy (GitHub Pages + GitHub Actions)
 
-Site: **https://duy-nhan.github.io/**. Repo: `Duy-Nhan/duy-nhan.github.io`, chứa cả dự án; `JD.md` đã được gitignore. Workflow `.github/workflows/deploy.yml` kiểm tra placeholder rồi chỉ publish thư mục `site/`.
+Site: **https://duy-nhan.github.io/duynhancv/**. Repo: `Duy-Nhan/duynhancv`, chứa cả dự án; `JD.md` đã được gitignore. Workflow `.github/workflows/deploy.yml` kiểm tra placeholder rồi chỉ publish thư mục `site/`.
 
 **Thiết lập lần đầu**
-1. Trên github.com: **New repository** → tên `duy-nhan.github.io` → **Public** → không tick README/.gitignore/license.
+1. Trên github.com: **New repository** → tên `duynhancv` → **Public** → không tick README/.gitignore/license.
 2. Repo → **Settings → Pages → Source: GitHub Actions**.
-3. Tạo token: Settings → Developer settings → **Fine-grained tokens** → chỉ chọn repo `duy-nhan.github.io` → Permissions **Contents: Read and write** và **Workflows: Read and write**.
+3. Tạo token: Settings → Developer settings → **Fine-grained tokens** → chỉ chọn repo `duynhancv` → Permissions **Contents: Read and write** và **Workflows: Read and write**.
 4. Trên máy: `cd ~/Documents/CV && git push -u origin main`. Username là `Duy-Nhan`, password là token vừa tạo. macOS Keychain sẽ nhớ token cho các lần sau.
 
 **Các lần cập nhật sau**
@@ -95,7 +81,7 @@ git add . && git commit -m "Update experience" && git push
 ```
 Khoảng 1 phút sau site tự cập nhật; xem tiến trình ở tab **Actions** của repo.
 
-**Tên miền riêng (sau này)**: mua domain (ví dụ `duynhan.dev`), thêm vào Settings → Pages → Custom domain, rồi trỏ DNS theo hướng dẫn của GitHub. Sau đó sửa URL trong canonical, og:url, JSON-LD, `robots.txt` và `sitemap.xml`.
+**Tên miền riêng (sau này)**: mua domain (ví dụ `duynhan.dev`), thêm vào Settings → Pages → Custom domain, rồi trỏ DNS theo hướng dẫn của GitHub. Sau đó sửa URL trong canonical, og:url, JSON-LD và `sitemap.xml`.
 
 ---
 
@@ -105,7 +91,7 @@ Khoảng 1 phút sau site tự cập nhật; xem tiến trình ở tab **Actions
 - `<title>` và `meta description` chứa từ khóa chính.
 - Open Graph: khi share link lên LinkedIn hoặc Zalo sẽ hiện đúng tiêu đề và mô tả.
 - JSON-LD `Person`: giúp Google hiểu bạn là ai, làm gì, có chứng chỉ gì.
-- `sitemap.xml`, `robots.txt`, canonical URL.
+- `sitemap.xml` (submit trong Google Search Console) và canonical URL. Site nằm dưới đường dẫn `/duynhancv/` nên không dùng `robots.txt`, vì crawler chỉ đọc file này ở gốc domain.
 
 ### Từ khóa nên dùng (trên website, LinkedIn và trong các bài viết)
 - **Chính**: COBOL developer, COBOL developer Vietnam, COBOL developer Ho Chi Minh, AS/400 developer

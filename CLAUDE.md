@@ -14,7 +14,7 @@ site/                 # Thư mục được deploy bởi GitHub Actions
   index.html          # Toàn bộ trang: meta SEO, JSON-LD Person, icon sprite, các section
   styles.css          # Design tokens, light/dark, responsive, @media print
   script.js           # Theme toggle, menu mobile, active nav, nút in, năm ở footer
-  favicon.svg, robots.txt, sitemap.xml
+  favicon.svg, sitemap.xml   # không có robots.txt: site là project page /duynhancv/, crawler chỉ đọc robots ở gốc domain
   assets/avatar.jpg                                     # ảnh chân dung 3x4 (600x800), chủ dự án tự thêm
   assets/certificates/azure-ai-engineer-associate.pdf   # chủ dự án tự thêm file
 ```
@@ -37,7 +37,7 @@ site/                 # Thư mục được deploy bởi GitHub Actions
 
 ## Placeholder & link
 - Tất cả placeholder đã được điền. Bước kiểm tra trong GitHub Actions sẽ chặn deploy nếu `site/` còn `[X]`, `_URL]` hoặc `GITHUB_USERNAME`.
-- Link "Verify on Microsoft Learn" đang tạm ẩn (comment trong `index.html`). Chỉ bật lại khi có link chia sẻ credential cá nhân, không dùng link trang giới thiệu chứng chỉ chung.
+- Link "Verify on Microsoft Learn" là link chia sẻ credential cá nhân (`learn.microsoft.com/api/credentials/share/...`). Không thay bằng link trang giới thiệu chứng chỉ chung.
 
 ## Quy ước code
 - Không dùng framework, không có bước build, không dùng thư viện JS. Phụ thuộc bên ngoài duy nhất là Google Fonts (Inter, JetBrains Mono).
@@ -59,11 +59,11 @@ site/                 # Thư mục được deploy bởi GitHub Actions
 5. Lệnh grep placeholder ở trên không còn ra kết quả nào.
 
 ## Deploy
-- Site: https://duy-nhan.github.io/. Repo `Duy-Nhan/duy-nhan.github.io` (public), branch `main`.
+- Site: https://duy-nhan.github.io/duynhancv/. Repo `Duy-Nhan/duynhancv` (public), branch `main`.
 - `.github/workflows/deploy.yml`: push lên `main` thì chạy kiểm tra placeholder rồi publish thư mục `site/` (actions configure-pages v5 / upload-pages-artifact v3 / deploy-pages v4). Pages Source: **GitHub Actions**.
 - `.gitignore` loại `JD.md` (không công khai JD), `.DS_Store`, `.vscode/`.
 - Git author cấu hình riêng cho repo này (`git config user.name/user.email`). Push qua HTTPS bằng fine-grained token; chủ dự án tự chạy `git push`.
-- Mỗi lần deploy nội dung mới, cập nhật `<lastmod>` trong `sitemap.xml`. Nếu đổi domain, sửa canonical, og:url, JSON-LD `url`, `robots.txt`, `sitemap.xml`.
+- Mỗi lần deploy nội dung mới, cập nhật `<lastmod>` trong `sitemap.xml`. Nếu đổi domain, sửa canonical, og:url, JSON-LD `url`, `sitemap.xml`.
 
 ## Hướng phát triển
 - Thêm mục Blog (1 bài/tháng). Khi có từ 3–5 bài thì cân nhắc chuyển sang Astro + Markdown, giữ nguyên thiết kế hiện tại.
